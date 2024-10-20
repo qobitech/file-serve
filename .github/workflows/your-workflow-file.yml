@@ -22,7 +22,6 @@ jobs:
       - name: Build and push to dockerhub
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context:
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/respondr.file.server:latest
-          file: ./Dockerfile
