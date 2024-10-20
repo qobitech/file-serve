@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package.json .
 RUN yarn
 COPY . .
-EXPOSE 8080
+EXPOSE 7070
 CMD ["yarn","http"]
